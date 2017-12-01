@@ -1,0 +1,15 @@
+<div style="text-align:center">
+<h1> Auction Registration!</h1>
+<form [formGroup]="form">
+<div formgroupname="auction">
+<div><label>AuctionId</label><input type='text' formControlName="auctionid"/></div>
+<div><label>Sellername:</label><input type='text' formControlName="sellername" /></div>
+<div><label>Itemname  :</label><input type='text'  formControlName="itemname"/></div>
+<div><label>Baseprice :</label><input type='text' formControlName="baseprice"/></div>
+<div><label>quantity  :</label><input type='text' formControlName="quantity"/></div>
+<div><label>Begin Date:</label><input type='text' formControlName="dateofauction"/></div>
+<div><label>End Date  :</label>
+<input type='text' formControlName="lastdateofacution"/></div> 
+</div>
+<button (click)="submit(form.value)">Submit</button>
+</form>  

@@ -1,0 +1,60 @@
+
+     <div class="container">
+ 
+       <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"><h3>Auction Registration!</h3></div>
+        <div class="col-md-3"></div>
+      </div>
+    <form [formGroup]="form">
+    <div formgroupname="auction">
+      <div class="row">
+         <div class="col-md-6">
+         <label>AuctionId: </label>
+         <input type='text' class="form-control" style="width:50%" formControlName="auctionid" required /></div>
+          <div class="col-md-6">
+          <label>Sellername:</label>
+         <input type='text' class="form-control" style="width:50%"  formControlName="sellername"  required/>
+        </div>
+       
+      </div>
+
+
+    
+      <div class="row">
+        <div class="col-md-6"><label>Baseprice :</label>
+         <input type='text' class="form-control" style="width:50%" formControlName="baseprice" required/></div>
+         <div class="col-md-6"><label>Itemname  :</label>
+         <input type='text' class="form-control" style="width:50%" formControlName="itemname" required/></div>
+         
+      </div>
+          <div class="row">
+        <div class="col-md-6"><label>Begin Date:</label>
+         <input class="form-control" style="width:50%" type='date' formControlName="dateofauction" required/></div>
+    
+         <div class="col-md-6"><label>quantity  :</label>
+         <input type='text' class="form-control" style="width:50%"formControlName="quantity" required/></div>
+      </div>
+       <div class="row">
+         <div class="col-md-6"><label>End Date  :</label>
+<input type='date'  class="form-control" style="width:50%" formControlName="lastdateofacution" required/></div>
+      </div>
+      
+ <div class="row" style="padding:5px">
+        <div class="col-md-4"></div>
+         <div class="col-md-4"><button  class="btn btn-sm btn-primary" (click)="submit(form.value)">Submit</button></div>
+          <div class="col-md-4"></div>
+      </div>
+</div>
+
+</form>  
+
+
+
+</div>
+
+
+
+
+
+
